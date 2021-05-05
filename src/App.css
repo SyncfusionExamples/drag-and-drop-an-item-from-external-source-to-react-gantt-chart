@@ -1,0 +1,6 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
+.ganttWrapper {
+    width: 75%;
+    float: left;
+}
