@@ -1,6 +1,6 @@
 # Drag and Drop Items from External Source to React Gantt Chart
 
-A quick-start project that allows you to drag and drop an item from an external TreeView component to the React Gantt Chart row. In this project, the dragged item is updated as a resource for the Gantt record using `nodeDragStop` event of TreeView control. 
+A quick-start project that allows you to drag and drop an item from an external TreeView component to the React Gantt Chart row. In this project, the dragged item is updated as an additional resource to the appropriate Gantt chart task using the `nodeDragStop` event of TreeView component.
 
 Documentation: https://ej2.syncfusion.com/react/documentation/gantt/how-to/drag-and-drop-from-another/
 
