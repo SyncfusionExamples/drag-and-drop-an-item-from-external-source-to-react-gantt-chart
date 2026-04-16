@@ -1,13 +1,52 @@
-# Drag and Drop Items from External Source to React Gantt Chart
+# React Gantt Chart: Drag and Drop External Resources
 
-A quick-start project that allows you to drag and drop an item from an external TreeView component to the React Gantt Chart row. In this project, the dragged item is updated as an additional resource to the appropriate Gantt chart task using the `nodeDragStop` event of TreeView component.
+A React sample showing how to drag resource nodes from a Syncfusion `TreeView` into a Syncfusion `GanttComponent` task and update task resources.
 
-Documentation: https://ej2.syncfusion.com/react/documentation/gantt/how-to/drag-and-drop-from-another/
+## Features
 
-## Project prerequisites
+- Syncfusion Gantt chart with external resource drag-and-drop
+- Task/resource mapping using sample data
+- Dynamic task updates via `nodeDragStop`
+- Resource assignment using `updateRecordByID`
 
-Make sure that you have the latest versions of NodeJS and visual studio code in your machine before starting to work on this project.
+## Project overview
 
-### How to run this application?
+`src/App.tsx` renders the Gantt chart and TreeView and handles drop updates. `src/data.js` provides example tasks and resource definitions. `src/index.tsx` bootstraps the app.
 
-To run this application, you need to clone the `drag-and-drop-an-item-from-external-source-to-react-gantt-chart` repository and then open it in Visual Studio Code. Now, simply install all the necessary react packages into your current project using the `npm install` command and run your project using the `npm start` command.
+## How it works
+
+- The Gantt chart initializes with `resourceData` and `resourceDetails`.
+- `TreeViewComponent` allows dragging resource nodes.
+- On drop, `onDragStop` finds the target row, merges the resource ID, and updates the selected task.
+
+## Prerequisites
+
+- Node.js 14+
+- npm
+
+## Install
+
+```bash
+npm install
+```
+
+## Run
+
+```bash
+npm start
+```
+
+Open `http://localhost:3000`.
+
+## Dependencies
+
+- `react`
+- `react-dom`
+- `react-scripts`
+- `typescript`
+- `@syncfusion/ej2-react-gantt`
+- `@syncfusion/ej2-react-navigations`
+
+## Notes
+
+Built with Create React App and TypeScript. Sample data lives in `src/data.js` and drag logic is in `src/App.tsx`.
