@@ -21,7 +21,7 @@ A React sample showing how to drag resource nodes from a Syncfusion `TreeView` i
 
 ## Prerequisites
 
-- Node.js 14+
+- Node.js (LTS or later)
 - npm
 
 ## Install
@@ -49,4 +49,4 @@ Open `http://localhost:3000`.
 
 ## Notes
 
-Built with Create React App and TypeScript. Sample data lives in `src/data.js` and drag logic is in `src/App.tsx`.
+This sample is built using React with TypeScript and demonstrates interaction between Syncfusion Gantt and TreeView components. The drag-and-drop logic is implemented in `src/App.tsx`, and all sample task and resource data is maintained locally for simplicity.
